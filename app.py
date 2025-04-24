@@ -47,4 +47,4 @@ def get_clue_of_the_day():
 
 @app.get("/api/rating")
 def rating():
-    return rating
+    return ratings
