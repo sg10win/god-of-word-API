@@ -125,13 +125,6 @@
     "answers": ["brain", "mind"]
   },
   {
-    "index": 19,
-    "hint1": "I come after 10 but before 12 and I’m odd.",
-    "hint2": "Middle",
-    "hint3": "Prime",
-    "answers": ["11"]
-  },
-  {
     "index": 20,
     "hint1": "What has 4 legs in the morning, 2 at noon, and 3 in the evening?",
     "hint2": "Time",
