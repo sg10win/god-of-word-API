@@ -26,7 +26,7 @@ today_views = 0
 alltime_views = 0
 
 @app.get("/api/clue-of-the-day")
-def get_clue_of_the_day():
+def get_clue_of_the_day(current_index=current_index, today_views=today_views, alltime_views=alltime_views):
     today_index = datetime.utcnow().timetuple().tm_yday % len(all_clues)
     clue = all_clues[today_index]
     if current_index != today_index:
