@@ -20,9 +20,9 @@ app.add_middleware(
 )
 
 rating = {
-    "current index": current_index,
-    "today_views": today_views,
-    "alltime_views": alltime_views
+    "current index": 0,
+    "today_views": 0,
+    "alltime_views": 0
     }
 
 # Load all clues from JSON file
