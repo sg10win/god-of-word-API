@@ -29,7 +29,7 @@ with open("clues.json", "r", encoding="utf-8") as f:
 
 @app.get("/api/clue-of-the-day")
 def get_clue_of_the_day():
-    today_index = datetime.utcnow().timetuple().tm_yday % len(all_clues)
+    today_index = datetime.utcnow().timetuple().tm_yday % 2*len(all_clues)
     clue = all_clues[today_index]
     global ratings
     if ratings["current_index"] != today_index:
