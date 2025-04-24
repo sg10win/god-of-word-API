@@ -34,11 +34,11 @@ with open("clues.json", "r", encoding="utf-8") as f:
 def get_clue_of_the_day():
     today_index = datetime.utcnow().timetuple().tm_yday % len(all_clues)
     clue = all_clues[today_index]
-    if rating.current_index != today_index:
-        ratig.current_index = today_index
-        rating.today_views = 0
-    rating.today_views += 1
-    rating.alltime_views += 1
+    if rating["current_index"] != today_index:
+        rating["current_index"] = today_index
+        rating["today_views"] = 0
+    rating["today_views"] += 1
+    rating["alltime_views"] += 1
     
     return {
         "hint1": " "+clue["hint1"],
