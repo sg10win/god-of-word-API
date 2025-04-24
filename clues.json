@@ -1,4 +1,185 @@
-[
+[ {
+    "index": 23,
+    "hint1": "I am a square number and also the sum of two smaller square numbers.",
+    "hint2": "Pythagoras",
+    "hint3": "Classic",
+    "answers": ["25"]
+  },
+  {
+    "index": 24,
+    "hint1": "If two’s company, and three’s a crowd, what are four and five?",
+    "hint2": "Just math",
+    "hint3": "Playful",
+    "answers": ["9"]
+  },
+  {
+    "index": 25,
+    "hint1": "I’m a single-digit number and the cube of another single-digit number.",
+    "hint2": "Sharp edges",
+    "hint3": "Basic",
+    "answers": ["8"]
+  },
+  {
+    "index": 26,
+    "hint1": "Add me to myself and multiply by 4. You get me again. What number am I?",
+    "hint2": "Circle",
+    "hint3": "Stubborn",
+    "answers": ["0"]
+  },
+  {
+    "index": 27,
+    "hint1": "I’m always in front of you, but can’t be seen.",
+    "hint2": "Later",
+    "hint3": "Waiting",
+    "answers": ["future"]
+  },
+  {
+    "index": 28,
+    "hint1": "I am the total number of angles in a pentagon.",
+    "hint2": "Interior",
+    "hint3": "Shape",
+    "answers": ["540"]
+  },
+  {
+    "index": 29,
+    "hint1": "What number is halfway between 10 and 100?",
+    "hint2": "Average",
+    "hint3": "Middle",
+    "answers": ["55"]
+  },
+  {
+    "index": 30,
+    "hint1": "The more you take, the more you leave behind. What am I?",
+    "hint2": "Ground",
+    "hint3": "Disappears",
+    "answers": ["footsteps"]
+  },
+  {
+    "index": 31,
+    "hint1": "I’m a number with no value, but everything starts with me.",
+    "hint2": "Origin",
+    "hint3": "Beginning",
+    "answers": ["0"]
+  },
+  {
+    "index": 32,
+    "hint1": "I’m the next prime number after 47.",
+    "hint2": "Not even",
+    "hint3": "Quiet",
+    "answers": ["53"]
+  },
+  {
+    "index": 33,
+    "hint1": "Divide 30 by half and add 10. What’s the result?",
+    "hint2": "Not 5",
+    "hint3": "Trick math",
+    "answers": ["70"]
+  },
+  {
+    "index": 34,
+    "hint1": "The more you remove from me, the bigger I get.",
+    "hint2": "Opposite",
+    "hint3": "Dig",
+    "answers": ["hole"]
+  },
+  {
+    "index": 35,
+    "hint1": "I’m the only number spelled with its letters in alphabetical order.",
+    "hint2": "Low",
+    "hint3": "Starts with e",
+    "answers": ["eight"]
+  },
+  {
+    "index": 36,
+    "hint1": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "hint2": "Alphabet",
+    "hint3": "Soundless",
+    "answers": ["m"]
+  },
+  {
+    "index": 37,
+    "hint1": "I have keys but no locks, space but no room. You can enter but not go outside. What am I?",
+    "hint2": "Fingers",
+    "hint3": "Plastic",
+    "answers": ["keyboard"]
+  },
+  {
+    "index": 38,
+    "hint1": "What number do you get when you multiply all the numbers on a phone keypad?",
+    "hint2": "One zero",
+    "hint3": "Whole product",
+    "answers": ["0"]
+  },
+  {
+    "index": 39,
+    "hint1": "How many sides does a circle have?",
+    "hint2": "Trick",
+    "hint3": "Perspective",
+    "answers": ["2"]
+  },
+  {
+    "index": 40,
+    "hint1": "What gets sharper the more you use it?",
+    "hint2": "Inside",
+    "hint3": "Intangible",
+    "answers": ["brain", "mind"]
+  },
+  {
+    "index": 41,
+    "hint1": "I come after 10 but before 12 and I’m odd.",
+    "hint2": "Middle",
+    "hint3": "Prime",
+    "answers": ["11"]
+  },
+  {
+    "index": 42,
+    "hint1": "What has 4 legs in the morning, 2 at noon, and 3 in the evening?",
+    "hint2": "Time",
+    "hint3": "Stages",
+    "answers": ["human"]
+  },
+  {
+    "index": 43,
+    "hint1": "I turn once, what is out will not get in. I turn again, what is in will not get out.",
+    "hint2": "Metal",
+    "hint3": "Security",
+    "answers": ["key"]
+  },
+  {
+    "index": 44,
+    "hint1": "I’m measured in degrees, but I’m not an angle.",
+    "hint2": "Feels",
+    "hint3": "Thermo",
+    "answers": ["temperature"]
+  },
+  {
+    "index": 47,
+    "hint1": "I’m always running but never move.",
+    "hint2": "Ticks",
+    "hint3": "Relentless",
+    "answers": ["time"]
+  },
+  {
+    "index": 48,
+    "hint1": "What has hands but can’t clap?",
+    "hint2": "Ticking",
+    "hint3": "Wall",
+    "answers": ["clock"]
+  },
+  {
+    "index": 49,
+    "hint1": "I’m lighter than a feather, yet no person can hold me for long.",
+    "hint2": "Vital",
+    "hint3": "Everywhere",
+    "answers": ["breath"]
+  },
+  {
+    "index": 50,
+    "hint1": "What is the square root of 2025?",
+    "hint2": "Not prime",
+    "hint3": "Ends with 5",
+    "answers": ["45"]
+  },
     {
       "index": 1,
       "hint1": "Hot and found in the kitchen",
@@ -97,9 +278,25 @@
       "hint3": "Found on books",
       "answers": ["title"]
     },
+     {
+    "index": 45,
+    "hint1": "You see me once in June, twice in November, and not at all in May.",
+    "hint2": "Letter",
+    "hint3": "Spelling",
+    "answers": ["e"]
+  },
+  {
+    "index": 46,
+    "hint1": "What can fill a room but takes up no space?",
+    "hint2": "Vibrates",
+    "hint3": "Invisible",
+    "answers": ["sound"]
+  },
     {
       "index": 15,
       "hint1": "My life is measured in hours",
+      "hint2": "I serve by being devoured",
+      "hint3": "I'm fast when I'm thin",
       "answers": ["candle"]
     },
     {
