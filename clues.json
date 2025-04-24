@@ -1,4 +1,4 @@
-[ {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{
+[ {
     "index": 23,
     "hint1": "I am a square number and also the sum of two smaller square numbers.",
     "hint2": "Pythagoras",
@@ -333,6 +333,7 @@
       "hint2": "I learn from your clicks",
       "hint3": "I’m powered by algorithms",
       "answers": ["search engine", "google"]
-    }
+    },
+    {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
   ]
   
