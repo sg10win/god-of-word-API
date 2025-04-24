@@ -6,9 +6,6 @@ import json
 
 app = FastAPI()
 
-current_index = 0
-today_views = 0
-alltime_views = 0
 
 # Allow frontend to call this API
 app.add_middleware(
@@ -20,7 +17,7 @@ app.add_middleware(
 )
 
 ratings = {
-    "current index": 0,
+    "current_index": 0,
     "today_views": 0,
     "alltime_views": 0
     }
