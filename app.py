@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-rating = {
+ratings = {
     "current index": 0,
     "today_views": 0,
     "alltime_views": 0
@@ -34,12 +34,12 @@ with open("clues.json", "r", encoding="utf-8") as f:
 def get_clue_of_the_day():
     today_index = datetime.utcnow().timetuple().tm_yday % len(all_clues)
     clue = all_clues[today_index]
-    global rating
-    if rating["current_index"] != today_index:
-        rating["current_index"] = today_index
-        rating["today_views"] = 0
-    rating["today_views"] = rating["today_views"] + 1
-    rating["alltime_views"] = rating["alltime_views"] + 1
+    global ratings
+    if ratings["current_index"] != today_index:
+        ratings["current_index"] = today_index
+        ratings["today_views"] = 0
+    ratings["today_views"] = ratings["today_views"] + 1
+    ratings["alltime_views"] = ratings["alltime_views"] + 1
     
     return {
         "hint1": " "+clue["hint1"],
