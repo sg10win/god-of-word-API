@@ -6,7 +6,9 @@ import json
 
 app = FastAPI()
 
-
+current_index = 0
+today_views = 0
+alltime_views = 0
 
 # Allow frontend to call this API
 app.add_middleware(
@@ -21,9 +23,6 @@ app.add_middleware(
 with open("clues.json", "r", encoding="utf-8") as f:
     all_clues = json.load(f)
 
-current_index = 0
-today_views = 0
-alltime_views = 0
 
 @app.get("/api/clue-of-the-day")
 def get_clue_of_the_day(current_index=current_index, today_views=today_views, alltime_views=alltime_views):
@@ -41,10 +40,10 @@ def get_clue_of_the_day(current_index=current_index, today_views=today_views, al
         "answers": clue["answers"]
     }
 
-# @app.get("/api/rating")
-# def rating():
-#     return {
-#         "current index": current_index,
-#         "today_views": today_views,
-#         "alltime_views": alltime_views
-#     }
+@app.get("/api/rating")
+def rating():
+    return {
+        "current index": current_index,
+        "today_views": today_views,
+        "alltime_views": alltime_views
+    }
