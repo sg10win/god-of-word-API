@@ -30,13 +30,19 @@ def get_clue_of_the_day():
     if current_index != today_index:
         current_index = today_index
         today_views = 0
-        
     today_views += 1
     alltime_views += 1
-    
     return {
         "hint1": " "+clue["hint1"],
         "hint2": " "+clue["hint2"],
         "hint3": " "+clue["hint3"],
         "answers": clue["answers"]
+    }
+
+@app.get("/api/rating")
+def rating():
+    return {
+        "current index": current_index,
+        "today_views": today_views,
+        "alltime_views": alltime_views
     }
