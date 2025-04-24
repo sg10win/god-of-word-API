@@ -39,10 +39,10 @@ def get_clue_of_the_day():
         "answers": clue["answers"]
     }
 
-@app.get("/api/rating")
-def rating():
-    return {
-        "current index": current_index,
-        "today_views": today_views,
-        "alltime_views": alltime_views
-    }
+# @app.get("/api/rating")
+# def rating():
+#     return {
+#         "current index": current_index,
+#         "today_views": today_views,
+#         "alltime_views": alltime_views
+#     }
