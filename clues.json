@@ -1,4 +1,60 @@
-[ {
+[ 
+  {
+    "index": 32,
+    "hint1": "I’m the next prime number after 47.",
+    "hint2": "Not even",
+    "hint3": "Quiet",
+    "answers": ["53"]
+  },
+  {
+    "index": 33,
+    "hint1": "Divide 30 by half and add 10. What’s the result?",
+    "hint2": "Not 5",
+    "hint3": "Trick math",
+    "answers": ["70"]
+  },
+  {
+    "index": 34,
+    "hint1": "The more you remove from me, the bigger I get.",
+    "hint2": "Opposite",
+    "hint3": "Dig",
+    "answers": ["hole"]
+  },
+  {
+    "index": 35,
+    "hint1": "I’m the only number spelled with its letters in alphabetical order.",
+    "hint2": "Low",
+    "hint3": "Starts with e",
+    "answers": ["eight"]
+  },
+  {
+    "index": 36,
+    "hint1": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "hint2": "Alphabet",
+    "hint3": "Soundless",
+    "answers": ["m"]
+  },
+  {
+    "index": 37,
+    "hint1": "I have keys but no locks, space but no room. You can enter but not go outside. What am I?",
+    "hint2": "Fingers",
+    "hint3": "Plastic",
+    "answers": ["keyboard"]
+  },
+  {
+    "index": 38,
+    "hint1": "What number do you get when you multiply all the numbers on a phone keypad?",
+    "hint2": "One zero",
+    "hint3": "Whole product",
+    "answers": ["0"]
+  },
+  {
+    "index": 39,
+    "hint1": "How many sides does a circle have?",
+    "hint2": "Trick",
+    "hint3": "Perspective",
+    "answers": ["2"]
+  },{
     "index": 23,
     "hint1": "I am a square number and also the sum of two smaller square numbers.",
     "hint2": "Pythagoras",
@@ -60,62 +116,6 @@
     "hint2": "Origin",
     "hint3": "Beginning",
     "answers": ["0"]
-  },
-  {
-    "index": 32,
-    "hint1": "I’m the next prime number after 47.",
-    "hint2": "Not even",
-    "hint3": "Quiet",
-    "answers": ["53"]
-  },
-  {
-    "index": 33,
-    "hint1": "Divide 30 by half and add 10. What’s the result?",
-    "hint2": "Not 5",
-    "hint3": "Trick math",
-    "answers": ["70"]
-  },
-  {
-    "index": 34,
-    "hint1": "The more you remove from me, the bigger I get.",
-    "hint2": "Opposite",
-    "hint3": "Dig",
-    "answers": ["hole"]
-  },
-  {
-    "index": 35,
-    "hint1": "I’m the only number spelled with its letters in alphabetical order.",
-    "hint2": "Low",
-    "hint3": "Starts with e",
-    "answers": ["eight"]
-  },
-  {
-    "index": 36,
-    "hint1": "What comes once in a minute, twice in a moment, but never in a thousand years?",
-    "hint2": "Alphabet",
-    "hint3": "Soundless",
-    "answers": ["m"]
-  },
-  {
-    "index": 37,
-    "hint1": "I have keys but no locks, space but no room. You can enter but not go outside. What am I?",
-    "hint2": "Fingers",
-    "hint3": "Plastic",
-    "answers": ["keyboard"]
-  },
-  {
-    "index": 38,
-    "hint1": "What number do you get when you multiply all the numbers on a phone keypad?",
-    "hint2": "One zero",
-    "hint3": "Whole product",
-    "answers": ["0"]
-  },
-  {
-    "index": 39,
-    "hint1": "How many sides does a circle have?",
-    "hint2": "Trick",
-    "hint3": "Perspective",
-    "answers": ["2"]
   },
   {
     "index": 40,
@@ -333,7 +333,6 @@
       "hint2": "I learn from your clicks",
       "hint3": "I’m powered by algorithms",
       "answers": ["search engine", "google"]
-    },
-    {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
+    }
   ]
   
