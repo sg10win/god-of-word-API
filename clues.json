@@ -21,13 +21,6 @@
     "answers": ["hole"]
   },
   {
-    "index": 4,
-    "hint1": "I’m the only number spelled with its letters in alphabetical order.",
-    "hint2": "Low",
-    "hint3": "Starts with e",
-    "answers": ["eight"]
-  },
-  {
     "index": 5,
     "hint1": "What comes once in a minute, twice in a moment, but never in a thousand years?",
     "hint2": "Alphabet",
