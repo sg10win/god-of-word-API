@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-rating = {
+global rating = {
     "current index": 0,
     "today_views": 0,
     "alltime_views": 0
@@ -34,8 +34,6 @@ with open("clues.json", "r", encoding="utf-8") as f:
 def get_clue_of_the_day():
     today_index = datetime.utcnow().timetuple().tm_yday % len(all_clues)
     clue = all_clues[today_index]
-    global
-    rating
     if rating["current_index"] != today_index:
         rating["current_index"] = today_index
         rating["today_views"] = 0
