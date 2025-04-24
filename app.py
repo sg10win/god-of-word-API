@@ -19,20 +19,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+rating = {
+    "current index": current_index,
+    "today_views": today_views,
+    "alltime_views": alltime_views
+    }
+
 # Load all clues from JSON file
 with open("clues.json", "r", encoding="utf-8") as f:
     all_clues = json.load(f)
 
 
 @app.get("/api/clue-of-the-day")
-def get_clue_of_the_day(current_index=current_index, today_views=today_views, alltime_views=alltime_views):
+def get_clue_of_the_day():
     today_index = datetime.utcnow().timetuple().tm_yday % len(all_clues)
     clue = all_clues[today_index]
-    if current_index != today_index:
-        current_index = today_index
-        today_views = 0
-    today_views += 1
-    alltime_views += 1
+    if rating.current_index != today_index:
+        ratig.current_index = today_index
+        rating.today_views = 0
+    rating.today_views += 1
+    rating.alltime_views += 1
+    
     return {
         "hint1": " "+clue["hint1"],
         "hint2": " "+clue["hint2"],
@@ -42,8 +49,4 @@ def get_clue_of_the_day(current_index=current_index, today_views=today_views, al
 
 @app.get("/api/rating")
 def rating():
-    return {
-        "current index": current_index,
-        "today_views": today_views,
-        "alltime_views": alltime_views
-    }
+    return rating
