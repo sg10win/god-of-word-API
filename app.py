@@ -37,8 +37,8 @@ def get_clue_of_the_day():
     if rating["current_index"] != today_index:
         rating["current_index"] = today_index
         rating["today_views"] = 0
-    rating["today_views"] += 1
-    rating["alltime_views"] += 1
+    rating["today_views"] = rating["today_views"] + 1
+    rating["alltime_views"] = rating["alltime_views"] + 1
     
     return {
         "hint1": " "+clue["hint1"],
