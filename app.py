@@ -6,6 +6,10 @@ import json
 
 app = FastAPI()
 
+current_index = 0
+today_views = 0
+alltime_views = 0
+
 # Allow frontend to call this API
 app.add_middleware(
     CORSMiddleware,
@@ -23,7 +27,13 @@ with open("clues.json", "r", encoding="utf-8") as f:
 def get_clue_of_the_day():
     today_index = datetime.utcnow().timetuple().tm_yday % len(all_clues)
     clue = all_clues[today_index]
-    print(clue)
+    if current_index != today_index:
+        current_index = today_index
+        today_views = 0
+        
+    today_views += 1
+    alltime_views += 1
+    
     return {
         "hint1": " "+clue["hint1"],
         "hint2": " "+clue["hint2"],
