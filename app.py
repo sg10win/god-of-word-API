@@ -20,22 +20,25 @@ ratings = {
     "alltime_views": 0
 }
 
-# Load all clues from JSON file
+# Load and sort clues by their `index` field
 with open("clues.json", "r", encoding="utf-8") as f:
-    all_clues = json.load(f)
+    raw_clues = json.load(f)
+    all_clues = sorted(raw_clues, key=lambda clue: clue["index"])
 
-def get_daily_index_21utc():
+def get_sorted_index_at_21utc():
     now = datetime.utcnow()
+    # If current time is before 21:00 UTC, use yesterday's index
     if now.hour < 21:
         clue_day = now - timedelta(days=1)
     else:
         clue_day = now
+    # Determine which clue to show based on days passed
     index = clue_day.timetuple().tm_yday % len(all_clues)
     return index
 
 @app.get("/api/clue-of-the-day")
 def get_clue_of_the_day():
-    clue_index = get_daily_index_21utc()
+    clue_index = get_sorted_index_at_21utc()
     clue = all_clues[clue_index]
     global ratings
     if ratings["current_index"] != clue_index:
