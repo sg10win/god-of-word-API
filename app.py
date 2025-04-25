@@ -1,11 +1,9 @@
-# main.py (FastAPI backend)
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 
 app = FastAPI()
-
 
 # Allow frontend to call this API
 app.add_middleware(
@@ -20,28 +18,36 @@ ratings = {
     "current_index": 0,
     "today_views": 0,
     "alltime_views": 0
-    }
+}
 
 # Load all clues from JSON file
 with open("clues.json", "r", encoding="utf-8") as f:
     all_clues = json.load(f)
 
+def get_daily_index_21utc():
+    now = datetime.utcnow()
+    if now.hour < 21:
+        clue_day = now - timedelta(days=1)
+    else:
+        clue_day = now
+    index = clue_day.timetuple().tm_yday % len(all_clues)
+    return index
 
 @app.get("/api/clue-of-the-day")
 def get_clue_of_the_day():
-    today_index = datetime.utcnow().timetuple().tm_yday % 2*len(all_clues)
-    clue = all_clues[today_index]
+    clue_index = get_daily_index_21utc()
+    clue = all_clues[clue_index]
     global ratings
-    if ratings["current_index"] != today_index:
-        ratings["current_index"] = today_index
+    if ratings["current_index"] != clue_index:
+        ratings["current_index"] = clue_index
         ratings["today_views"] = 0
-    ratings["today_views"] = ratings["today_views"] + 1
-    ratings["alltime_views"] = ratings["alltime_views"] + 1
-    
+    ratings["today_views"] += 1
+    ratings["alltime_views"] += 1
+
     return {
-        "hint1": " "+clue["hint1"],
-        "hint2": " "+clue["hint2"],
-        "hint3": " "+clue["hint3"],
+        "hint1": " " + clue["hint1"],
+        "hint2": " " + clue["hint2"],
+        "hint3": " " + clue["hint3"],
         "answers": clue["answers"]
     }
 
