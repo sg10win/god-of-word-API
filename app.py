@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime, timedelta
 import json
+import random
+import hashlib
 
 app = FastAPI()
 
@@ -15,30 +17,31 @@ app.add_middleware(
 )
 
 ratings = {
-    "current_index": 0,
+    "current_index": -1,
     "today_views": 0,
     "alltime_views": 0
 }
 
-# Load and sort clues by their `index` field
+# Load clues from JSON file
 with open("clues.json", "r", encoding="utf-8") as f:
-    raw_clues = json.load(f)
-    all_clues = sorted(raw_clues, key=lambda clue: clue["index"])
+    all_clues = json.load(f)
 
-def get_sorted_index_at_21utc():
+def get_daily_random_index():
     now = datetime.utcnow()
-    # If current time is before 21:00 UTC, use yesterday's index
     if now.hour < 21:
         clue_day = now - timedelta(days=1)
     else:
         clue_day = now
-    # Determine which clue to show based on days passed
-    index = clue_day.timetuple().tm_yday % len(all_clues)
-    return index
+
+    # Generate a deterministic "random" seed from the date
+    seed_str = clue_day.strftime("%Y-%m-%d")
+    seed = int(hashlib.sha256(seed_str.encode()).hexdigest(), 16)
+    random.seed(seed)
+    return random.randint(0, len(all_clues) - 1)
 
 @app.get("/api/clue-of-the-day")
 def get_clue_of_the_day():
-    clue_index = get_sorted_index_at_21utc()
+    clue_index = get_daily_random_index()
     clue = all_clues[clue_index]
     global ratings
     if ratings["current_index"] != clue_index:
