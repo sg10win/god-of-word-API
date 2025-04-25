@@ -1,4 +1,144 @@
-[ 
+[
+  {
+    "index": 59,
+    "hint1": "A square has 4, a cube has 6, what has 12?",
+    "hint2": "Think folded.",
+    "hint3": "Edges make frames.",
+    "answers": ["Dodecagon"]
+  },
+  {
+    "index": 60,
+    "hint1": "What 3-digit number multiplied by 3 is its reverse?",
+    "hint2": "Middle stays the same.",
+    "hint3": "Mirror?",
+    "answers": ["219"]
+  },
+  {
+    "index": 61,
+    "hint1": "I am odd. Take away one letter and I become even.",
+    "hint2": "It's not about math.",
+    "hint3": "Wordplay, not numbers.",
+    "answers": ["Seven"]
+  },
+  {
+    "index": 62,
+    "hint1": "Smallest number with 10 divisors.",
+    "hint2": "Less than 100.",
+    "hint3": "Not square.",
+    "answers": ["60"]
+  },
+  {
+    "index": 63,
+    "hint1": "Double me and add 6, get 100.",
+    "hint2": "Easy for robots.",
+    "hint3": "Check the setup.",
+    "answers": ["47"]
+  },
+  {
+    "index": 64,
+    "hint1": "Starts with 1, ends with 1, never ends.",
+    "hint2": "You’ll never write me fully.",
+    "hint3": "It’s everywhere in math.",
+    "answers": ["Pi"]
+  },
+  {
+    "index": 65,
+    "hint1": "I equal 3 when squared and then decreased by 6.",
+    "hint2": "Reverse engineer.",
+    "hint3": "Short roots.",
+    "answers": ["3"]
+  },
+  {
+    "index": 66,
+    "hint1": "Which prime is closest to 100?",
+    "hint2": "Too high and you’ll miss it.",
+    "hint3": "Even numbers are useless.",
+    "answers": ["97"]
+  },
+  {
+    "index": 67,
+    "hint1": "Only number that is both the sum and product of three positive integers.",
+    "hint2": "No tricks.",
+    "hint3": "Start small.",
+    "answers": ["6"]
+  },
+  {
+    "index": 68,
+    "hint1": "I'm a 2-digit number, my digits multiply to 9, and I end in 3.",
+    "hint2": "Narrow field.",
+    "hint3": "Start at 13?",
+    "answers": ["93"]
+  },
+  {
+    "index": 69,
+    "hint1": "What's always the same distance from the center?",
+    "hint2": "Not flexible.",
+    "hint3": "Stay in line.",
+    "answers": ["Radius"]
+  },
+  {
+    "index": 70,
+    "hint1": "Which 2-digit number equals the square of the sum of its digits?",
+    "hint2": "Try 1–9.",
+    "hint3": "A rare one.",
+    "answers": ["81"]
+  },
+  {
+    "index": 71,
+    "hint1": "My half is 9 more than my third.",
+    "hint2": "Basic algebra.",
+    "hint3": "Could use fractions.",
+    "answers": ["54"]
+  },
+  {
+    "index": 72,
+    "hint1": "I am between 30 and 50. I divide by 3, 4, and 6 with no remainder.",
+    "hint2": "Check least common.",
+    "hint3": "Math trick.",
+    "answers": ["36"]
+  },
+  {
+    "index": 73,
+    "hint1": "Which number becomes 4 times itself when flipped?",
+    "hint2": "Upside-down logic.",
+    "hint3": "Calculator era.",
+    "answers": ["87"]
+  },
+  {
+    "index": 74,
+    "hint1": "I am a cube and also a square.",
+    "hint2": "Not many exist.",
+    "hint3": "Think overlap.",
+    "answers": ["64"]
+  },
+  {
+    "index": 75,
+    "hint1": "I am the sum of the first five prime numbers.",
+    "hint2": "Not the first five numbers.",
+    "hint3": "No 1 included.",
+    "answers": ["28"]
+  },
+  {
+    "index": 76,
+    "hint1": "How many zeros in 100 factorial?",
+    "hint2": "You don’t need to calculate the whole.",
+    "hint3": "Count fives.",
+    "answers": ["24"]
+  },
+  {
+    "index": 77,
+    "hint1": "Multiply me by any number, the result ends in me.",
+    "hint2": "Always last.",
+    "hint3": "One-digit answer.",
+    "answers": ["5"]
+  },
+  {
+    "index": 78,
+    "hint1": "I am the smallest perfect square with 3 different digits.",
+    "hint2": "Between 100 and 300.",
+    "hint3": "Digits don’t repeat.",
+    "answers": ["144"]
+  },
   {
     "index": 1,
     "hint1": "I’m the next prime number after 47.",
